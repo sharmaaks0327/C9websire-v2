@@ -160,7 +160,7 @@
     <div class="contact" style="max-width:900px; margin:0 auto">
       <h3 class="section-title" style="text-align:center">Book a Free In‑Home Estimate</h3>
       <p class="section-sub" style="text-align:center">We serve Calgary and nearby areas. No obligation.</p>
-      <form class="form" onsubmit="return false;" style="background:#fff; border:1px solid var(--line); border-radius:22px; padding:18px; box-shadow:0 12px 40px rgba(5,26,55,.08)">
+      <form action="https://formspree.io/f/xwpwbdbz" method="POST" class="form" id="quoteForm">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
           <input placeholder="Full name" required style="padding:14px; border-radius:12px; border:1px solid #cfe2ff">
           <input placeholder="Phone number" required style="padding:14px; border-radius:12px; border:1px solid #cfe2ff">
@@ -168,13 +168,25 @@
         <input placeholder="Address (City, Postal Code)" required style="width:100%; margin-top:12px; padding:14px; border-radius:12px; border:1px solid #cfe2ff">
         <textarea rows="4" placeholder="Tell us about your project (window sizes, style)" style="width:100%; margin-top:12px; padding:14px; border:1px solid #cfe2ff"></textarea>
         <div style="display:flex; gap:12px; margin-top:12px; flex-wrap:wrap">
+			<!-- Email subject line in your inbox -->
+<input type="hidden" name="_subject" value="New Cloud9Blinds Quote Request">
+
+<!-- Redirect after submit (use your live domain) -->
+<input type="hidden" name="_next" value="https://cloud9blinds.ca/#thanks">
+
+<!-- Simple spam trap (invisible to humans) -->
+<input type="text" name="_gotcha" style="display:none">
           <button class="btn btn-primary" type="submit">Request Visit</button>
-          <a class="btn btn-ghost" href="mailto:hello@cloud9blinds.ca">Email Us</a>
+          <a class="btn btn-ghost" href="mailto:info@cloud9blinds.ca">Email Us</a>
         </div>
       </form>
     </div>
   </section>
 </main>
+	<section id="thanks" class="section" style="text-align:center">
+  <h3>Thanks! 🎉</h3>
+  <p>We received your request and will reach out shortly.</p>
+</section>
 
 <footer class="footer">
   <div class="inner">
