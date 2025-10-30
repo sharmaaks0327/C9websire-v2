@@ -169,4 +169,11 @@ background: rgba(255,255,255,0.85);
   .hero h1 { font-size:clamp(26px,9vw,32px); }
   .hero p  { font-size:.95rem; }
 }
+/* Thank-you panel: hidden by default, shows only when #thanks is in URL */
+#thanks { 
+  display: none; 
+}
 
+#thanks:target { 
+  display: block; 
+}
