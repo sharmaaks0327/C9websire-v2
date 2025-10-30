@@ -190,18 +190,36 @@ background: rgba(255,255,255,0.85);
     height: 50px;      /* slightly smaller for very small screens */
   }
 }
-/* --- Reviews --- */
+/* Reviews layout */
+.reviews-aggregate{
+  text-align:center;
+  margin:8px 0 22px;
+  color:#2b4c72;
+  font-weight:600;
+}
+
+/* 3 equal columns on desktop, 1 on mobile */
 .reviews-grid{
-  max-width:980px; margin:0 auto;
-  display:grid; grid-template-columns:repeat(3,1fr); gap:18px;
+  max-width:980px;
+  margin:0 auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
 }
+
 .review{
-  background:#fff; border:1px solid rgba(0,0,0,.06);
-  border-radius:16px; padding:16px;
+  background:#fff;
+  border:1px solid rgba(0,0,0,.06);
+  border-radius:16px;
+  padding:16px;
   box-shadow:0 10px 24px rgba(10,33,58,.06);
+  display:flex;
+  flex-direction:column;
+  height:100%;           /* equal card heights */
 }
+
 .review .stars{ color:#f5a623; font-weight:700; margin-bottom:8px; letter-spacing:1px; }
-.review .text{ color:#2b4c72; }
+.review .text{ color:#2b4c72; flex:1; }
 .review .by{ color:#5c789c; margin-top:8px; font-size:.95rem; }
 
 @media (max-width:900px){
