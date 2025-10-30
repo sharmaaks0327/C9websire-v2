@@ -177,3 +177,16 @@ background: rgba(255,255,255,0.85);
 #thanks:target { 
   display: block; 
 }
+/* ===== MOBILE LOGO SIZE ===== */
+@media (max-width: 900px) {
+  .brand img.logo {
+    height: 60px;      /* adjust the number until it looks right */
+    width: auto;       /* keeps proportions */
+  }
+}
+
+@media (max-width: 600px) {
+  .brand img.logo {
+    height: 50px;      /* slightly smaller for very small screens */
+  }
+}
