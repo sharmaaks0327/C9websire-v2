@@ -118,4 +118,55 @@ background: rgba(255,255,255,0.85);
   transform: translateY(0);
   filter: blur(0);
 }
+/* ===== Cloud9Blinds — Mobile Layout ONLY (keeps motion intact) ===== */
+@media (max-width: 900px){
+
+  /* Base legibility */
+  html, body { overflow-x:hidden; }
+  body { font-size:15px; line-height:1.6; }
+
+  /* Header */
+  .nav .inner { height:64px; padding:0 12px; }
+  .brand img.logo { height:32px; width:auto; display:block; }
+  .links { display:none; }                    /* hide desktop nav links on mobile */
+  .cta { padding:10px 14px; font-size:.95rem; }
+
+  /* Hero (sizes only; no transforms here) */
+  .hero { min-height:82vh; }
+  .hero h1 { font-size:clamp(28px,8vw,36px); line-height:1.15; padding:0 12px; }
+  .hero p  { font-size:1rem; padding:0 14px; }
+
+  /* Sections & headings */
+  .section { padding:56px 16px; }
+  .section-title { font-size:clamp(24px,6.5vw,30px); }
+  .section-sub   { font-size:.98rem; padding:0 8px; }
+
+  /* Two-column rows collapse to one column */
+  .row, .row.alt { display:block; max-width:980px; margin:24px auto; }
+  .row .card, .row .copy { margin:0 0 16px; }
+
+  /* Product images */
+  .card img { width:100%; height:auto; border-radius:12px; }
+
+  /* Buttons */
+  .btn { padding:12px 18px; font-size:.95rem; line-height:1.1; }
+  .btn-row { flex-direction:column; align-items:stretch; gap:10px; }
+  .btn-row .btn { width:100%; max-width:420px; margin:0 auto; }
+
+  /* Gallery tiles */
+  .tile { flex:0 0 86vw; height:52vh; }
+
+  /* Marquee spacing */
+  .marquee .track { padding:8px 0; }
+  .marquee span { margin:0 18px; }
+
+  /* Safety: media fit & no wrap explosions */
+  img, video { max-width:100%; height:auto; }
+  p, li { word-break:break-word; }
+}
+
+@media (max-width: 600px){
+  .hero h1 { font-size:clamp(26px,9vw,32px); }
+  .hero p  { font-size:.95rem; }
+}
 
