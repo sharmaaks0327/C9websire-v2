@@ -1,19 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-	<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-17709444338"></script>
+	<!-- Global site tag (ONE loader only) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P6LC1QXY3F"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
+  /* GA4 */
+  gtag('config', 'G-P6LC1QXY3F');
+
+  /* Google Ads (this is the line Google showed you) */
   gtag('config', 'AW-17709444338');
 </script>
-	<!DOCTYPE html>
-<html lang="en">
-	<link rel="canonical" href="https://www.cloud9blinds.ca/" />
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -233,7 +233,12 @@
     <div class="contact" style="max-width:900px; margin:0 auto">
       <h3 class="section-title" style="text-align:center">Book a Free In‑Home Estimate</h3>
       <p class="section-sub" style="text-align:center">We serve Calgary and nearby areas. No obligation.</p>
-      <form action="https://formspree.io/f/xzzkjrra" method="POST" class="form" id="quoteForm">
+      <form
+  action="https://formspree.io/f/xzzkjrra"
+  method="POST"
+  class="form"
+  id="quoteForm"
+  onsubmit="gtag('event','conversion',{'send_to':'AW-17709444338'});">
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px">
           <input placeholder="Full name" required style="padding:14px; border-radius:12px; border:1px solid #cfe2ff">
           <input placeholder="Phone number" required style="padding:14px; border-radius:12px; border:1px solid #cfe2ff">
